@@ -3,6 +3,8 @@ from gpiozero import LED
 from django.shortcuts import redirect
 import time
 import pigpio
+from gpiozero.pins.pigpio import PiGPIOFactory
+
 
 
 
