@@ -14,16 +14,16 @@ def home(request):
     return render(request, 'home.html')
 
 def turnon(request):
-    factory = PiGPIOFactory(host='127.0.0.1')
-    led = LED(17, pin_factory=factory)
+    # factory = PiGPIOFactory(host='127.0.0.1')
+    led = LED(17)
     led.on()
     print('ONNNN')
     return redirect('home')
 
 
 def turnoff(request):
-    factory = PiGPIOFactory(host='127.0.0.1')
-    led = LED(17, pin_factory=factory)
+    # factory = PiGPIOFactory(host='127.0.0.1')
+    led = LED(17)
     led.off()
     print('OFFFF')
     return redirect('home')
