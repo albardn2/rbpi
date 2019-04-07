@@ -12,7 +12,7 @@ def home(request):
 def turnon(request):
     led = LED(17)
     led.on()
-    print('ONNNN')
+    print('ONNNNN')
     return redirect('home')
 
 
