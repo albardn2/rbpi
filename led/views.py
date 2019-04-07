@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from gpiozero import LED
 from django.shortcuts import redirect
+import time
 
 
 
@@ -12,7 +13,8 @@ def home(request):
 def turnon(request):
     led = LED(17)
     led.on()
-    print('ONNNNN')
+    time.sleep(4)
+    print('ONNNN')
     return redirect('home')
 
 
